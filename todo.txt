@@ -1,6 +1,0 @@
-- refine output for explanations 
-
-
-- add feature: check whether the team is viable based on abilities 
-
-github personal access token: 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 
