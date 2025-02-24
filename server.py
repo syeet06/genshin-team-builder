@@ -126,31 +126,31 @@ def calculate_resonance_score(team_elements, team, char_cache):
                     hydro = element_counts.get('Hydro',0)
                     dendro = element_counts.get('Dendro',0)
                     if hydro + dendro >= 2:
-                        score-=50 
+                        score-=20 
             if 'Support' in char_cache[char]['roles']:
                 # Chev needs Pyro/Electro teammates
                 if char == 'Chevreuse':
                     pyro = element_counts.get('Pyro', 0)
                     electro = element_counts.get('Electro', 0)
                     if pyro + electro < 3:
-                        score -= 100  
+                        score -= 50  
                         
                 # Sara needs Electro DPS
                 elif char == 'Kujou Sara':
-                    if element_counts.get('Electro', 0) < 1:
+                    if element_counts.get('Electro', 0) < 2:
                         score -= 100
                 
                 # Shenhe is a cryo support 
                 elif char == 'Shenhe':
-                    if element_counts.get('Cryo', 0) < 1:
+                    if element_counts.get('Cryo', 0) < 2:
                         score -= 100
                 
                 elif char == 'Faruzan':
-                    if element_counts.get('Anemo', 0) < 1:
+                    if element_counts.get('Anemo', 0) < 2:
                         score -= 100
                 
                 elif char == 'Gorou':
-                    if element_counts.get('Geo', 0) < 1:
+                    if element_counts.get('Geo', 0) < 2:
                         score -= 100
 
                 elif char == 'Kuki Shinobu': #prioritize kuki over other electro supports like fischl in hyperbloom teams
