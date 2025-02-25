@@ -10,3 +10,4 @@ Example team and explanation:
 
 To do:
 - Finetune model for better explanations
+- Add support for constellations 
